@@ -11,7 +11,7 @@ export default class App extends Component {
   }
 
   check = () => {
-    axios.get("http://localhost:5000/react").then((res) => {
+    axios.get("https://lhs02.azurewebsites.net/react").then((res) => {
       if (res.data.success) {
         this.setState({
           data: "Backend Connected"
